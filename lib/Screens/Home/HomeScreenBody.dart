@@ -10,9 +10,33 @@ class HomeScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      // bottomNavigationBar: ,
-      body: Column(
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.menu,
+              color: KSecColor,
+            ),
+            label: 'More',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              FontAwesomeIcons.basketShopping,
+              color: KSecColor,
+            ),
+            label: 'Shopping Cart',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              FontAwesomeIcons.house,
+              color: KSecColor,
+            ),
+            label: 'Home',
+          ),
+        ],
+      ),
+      body: const Column(
         children: [
           TopPart(),
           SizedBox(
