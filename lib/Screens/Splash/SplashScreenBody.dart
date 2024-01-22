@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pharmacy/Screens/Home/HomeScreen.dart';
 
 import '../../Core/Utils/Size_Config.dart';
 import '../OnBoarding/OnBoardingScreen.dart';
@@ -64,7 +65,7 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
 
   void goToNextScreen() {
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const OnBoardingScreen(), transition: Transition.fade);
+      Get.to(() => const HomeScreen(), transition: Transition.fade);
     });
   }
 }

@@ -10,6 +10,6 @@ class OnBoardingScreenBody extends StatefulWidget {
 class _OnBoardingScreenBodyState extends State<OnBoardingScreenBody> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Container();
   }
 }
