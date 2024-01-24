@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:pharmacy/Core/Constants/Costants.dart';
 import 'package:pharmacy/Core/Widgets/Custom_Buttons.dart';
 import 'package:pharmacy/Screens/Widgets/SearchBar.dart';
 import 'package:pharmacy/Screens/Widgets/TopPartInHomeScreen.dart';
+import '../MedicationReminder/Home/HomeMed.dart';
 
-class HomeScreenBody extends StatelessWidget {
+class HomeScreenBody extends StatefulWidget {
   const HomeScreenBody({super.key});
 
+  @override
+  State<HomeScreenBody> createState() => _HomeScreenBodyState();
+}
+
+class _HomeScreenBodyState extends State<HomeScreenBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,14 +43,14 @@ class HomeScreenBody extends StatelessWidget {
           ),
         ],
       ),
-      body: const Column(
+      body: Column(
         children: [
-          TopPart(),
-          SizedBox(
+        const  TopPart(),
+      const    SizedBox(
             height: 5,
           ),
-          SearchBarr(),
-          SizedBox(
+        const  SearchBarr(),
+       const   SizedBox(
             height: 10,
           ),
           Row(
@@ -53,6 +60,12 @@ class HomeScreenBody extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8),
                     child: CustomButtonWithIcon(
+                      onTap: () {
+                        setState(() {
+                          goToHomeMedScreen() {}
+                          ;
+                        });
+                      },
                       text: 'Medicine Reminder',
                       iconData: FontAwesomeIcons.clock,
                       color: KSecColor,
@@ -72,6 +85,12 @@ class HomeScreenBody extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+
+  void goToHomeMedScreen() {
+    Get.to(
+      () => const HomeMedScreen(),
     );
   }
 }

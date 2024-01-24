@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 
 import 'Screens/Splash/SplashScreen.dart';
 
@@ -13,11 +14,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Pharmacy',
-      home: const SplashScreen(),
-      theme: ThemeData(useMaterial3: true, fontFamily: 'IBMPlexSans-Bold'),
-    );
+    return Sizer(builder:
+        (BuildContext context, Orientation orientation, DeviceType deviceType) {
+      return GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Pharmacy',
+        home: const SplashScreen(),
+        theme: ThemeData(useMaterial3: true, fontFamily: 'IBMPlexSans-Bold'),
+      );
+    });
   }
 }
