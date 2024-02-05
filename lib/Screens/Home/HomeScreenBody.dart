@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:get/get.dart';
 import 'package:pharmacy/Core/Constants/Costants.dart';
 import 'package:pharmacy/Core/Widgets/Custom_Buttons.dart';
 import 'package:pharmacy/Screens/Widgets/SearchBar.dart';
 import 'package:pharmacy/Screens/Widgets/TopPartInHomeScreen.dart';
-import '../MedicationReminder/Home/HomeMed.dart';
 
 class HomeScreenBody extends StatefulWidget {
   const HomeScreenBody({super.key});
@@ -45,12 +43,12 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
       ),
       body: Column(
         children: [
-        const  TopPart(),
-      const    SizedBox(
+          const TopPart(),
+          const SizedBox(
             height: 5,
           ),
-        const  SearchBarr(),
-       const   SizedBox(
+          const SearchBarr(),
+          const SizedBox(
             height: 10,
           ),
           Row(
@@ -71,7 +69,7 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
                       color: KSecColor,
                     ),
                   )),
-              Flexible(
+              const Flexible(
                   flex: 1,
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8),
@@ -85,12 +83,6 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
           )
         ],
       ),
-    );
-  }
-
-  void goToHomeMedScreen() {
-    Get.to(
-      () => const HomeMedScreen(),
     );
   }
 }

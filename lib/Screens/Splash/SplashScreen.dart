@@ -8,7 +8,9 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child: Scaffold(body: SplashScreenBody()),
+      child: Scaffold(
+        backgroundColor:Color.fromARGB(255, 89, 189, 93) ,
+        body: SplashScreenBody()),
     );
   }
 }
