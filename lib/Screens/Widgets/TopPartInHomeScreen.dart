@@ -1,46 +1,49 @@
 import 'package:flutter/material.dart';
-
-import '../../Core/Constants/Costants.dart';
-import '../../Core/Utils/Size_Config.dart';
+import 'package:pharmacy/Core/Constants/Costants.dart';
 
 class TopPart extends StatelessWidget {
   const TopPart({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: SizeConfig.DefaultSize! * 12,
-      width: SizeConfig.ScreenWidth,
-      decoration: const BoxDecoration(
-          gradient: LinearGradient(colors: [
-            KPrimaryColor,
-            KSecColor,
-            KThirdColor,
-            KFourthColor,
-            KFifthColor,
-          ]),
-          borderRadius: BorderRadiusDirectional.only(
-              bottomStart: Radius.circular(15),
-              bottomEnd: Radius.circular(15))),
-      child: const Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Center(
-                child: Text(
-                  'Pharmacy Name',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      color: KMainColor),
-                ),
-              ),
-            ],
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Align(
+            alignment: Alignment.topLeft,
+            child: IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.menu,
+                  color: KMainColor,
+                  size: 35,
+                )),
           ),
-        ],
-      ),
+        ),
+        const Padding(
+          padding: EdgeInsets.only(left: 30),
+          child: Align(
+            alignment: Alignment.topLeft,
+            child: Text(
+              'Pharmacy',
+              style: TextStyle(
+                  fontSize: 40, fontWeight: FontWeight.bold, color: KMainColor),
+            ),
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.only(left: 30),
+          child: Align(
+            alignment: Alignment.topLeft,
+            child: Text(
+              'Name',
+              style: TextStyle(
+                  fontSize: 30, fontWeight: FontWeight.bold, color: KMainColor),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

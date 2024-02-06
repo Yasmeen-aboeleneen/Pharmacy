@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pharmacy/Core/Constants/Costants.dart';
 
 import 'HomeScreenBody.dart';
 
@@ -9,9 +8,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child:  Scaffold(
-        backgroundColor: KMainColor,
-        body: HomeScreenBody()),
+      child: Scaffold(
+          backgroundColor: Color.fromARGB(255, 255, 255, 255),
+          body: HomeScreenBody()),
     );
   }
 }

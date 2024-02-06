@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:pharmacy/Screens/Home/HomeScreen.dart';
+import 'package:pharmacy/Screens/OnBoarding/OnBoardingScreen.dart';
 import '../../Core/Utils/Size_Config.dart';
 
 class SplashScreenBody extends StatefulWidget {
@@ -18,7 +18,7 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
     super.initState();
     Timer(const Duration(seconds: 8), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (builder) => const HomeScreen(),
+        builder: (builder) => const OnBoardingScreen(),
       ));
     });
   }
