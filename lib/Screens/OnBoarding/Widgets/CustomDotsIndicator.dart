@@ -3,7 +3,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
-import '../../Core/Constants/Costants.dart';
+import '../../../Core/Constants/Costants.dart';
 
 
 

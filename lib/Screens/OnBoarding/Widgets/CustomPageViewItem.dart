@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../Core/Utils/Size_Config.dart';
-import '../../Core/Widgets/SpaceWidget.dart';
+import '../../../Core/Utils/Size_Config.dart';
+import '../../../Core/Widgets/SpaceWidget.dart';
 
 class CustomPageViewItem extends StatelessWidget {
   const CustomPageViewItem({

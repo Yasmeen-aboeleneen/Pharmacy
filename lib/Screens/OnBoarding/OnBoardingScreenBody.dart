@@ -5,8 +5,8 @@ import 'package:pharmacy/Screens/Home/HomeScreen.dart';
 
 import '../../Core/Utils/Size_Config.dart';
 import '../../Core/Widgets/Custom_Buttons.dart';
-import '../Widgets/CustomDotsIndicator.dart';
-import '../Widgets/CustomPageView.dart';
+import 'Widgets/CustomDotsIndicator.dart';
+import 'Widgets/CustomPageView.dart';
 
 class OnBoardingBody extends StatefulWidget {
   const OnBoardingBody({super.key});
@@ -77,4 +77,3 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
     );
   }
 }
-
