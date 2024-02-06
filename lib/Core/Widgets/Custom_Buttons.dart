@@ -27,7 +27,7 @@ class CustomButtonWithIcon extends StatelessWidget {
             shape: BoxShape.rectangle,
             color: KMainColor,
             borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: KMainColor)),
+            border: Border.all(color: KSecColor)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -69,7 +69,7 @@ class CustomGeneralButton extends StatelessWidget {
         height: 60,
         width: SizeConfig.ScreenWidth,
         decoration: BoxDecoration(
-          color: KMainColor,
+          color: KSecColor,
           borderRadius: BorderRadius.circular(8),
         ),
         child: Center(

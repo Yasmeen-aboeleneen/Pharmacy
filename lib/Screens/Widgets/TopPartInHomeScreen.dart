@@ -16,7 +16,7 @@ class TopPart extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(
                   Icons.menu,
-                  color: KMainColor,
+                  color: KSecColor,
                   size: 35,
                 )),
           ),
@@ -28,7 +28,7 @@ class TopPart extends StatelessWidget {
             child: Text(
               'Pharmacy',
               style: TextStyle(
-                  fontSize: 40, fontWeight: FontWeight.bold, color: KMainColor),
+                  fontSize: 40, fontWeight: FontWeight.bold, color: KSecColor),
             ),
           ),
         ),
@@ -39,7 +39,7 @@ class TopPart extends StatelessWidget {
             child: Text(
               'Name',
               style: TextStyle(
-                  fontSize: 30, fontWeight: FontWeight.bold, color: KMainColor),
+                  fontSize: 30, fontWeight: FontWeight.bold, color: KSecColor),
             ),
           ),
         ),

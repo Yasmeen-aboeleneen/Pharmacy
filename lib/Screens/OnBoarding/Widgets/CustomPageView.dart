@@ -13,18 +13,17 @@ class CustomPageView extends StatelessWidget {
       controller: pageController,
       children: const [
         CustomPageViewItem(
-          image: 'Assets/Images/Pharmacy.png',
+          image: 'Assets/Images/pic3.jpg',
           title: 'Shopping',
-          subtitle: ' Explore top organic fruits',
+          subtitle: ' Explore what you want',
         ),
         CustomPageViewItem(
-          image: 'Assets/Images/Pharmacy.png',
+          image: 'Assets/Images/pic4.jpg',
           title: 'Delivery on the way',
           subtitle: 'Get your order by speed delivery',
         ),
         CustomPageViewItem(
-          image: 'Assets/Images/Pharmacy.png',
-          
+          image: 'Assets/Images/pic5.jpg',
           title: 'Delivery Arrived',
           subtitle: 'Order is arrived at your place',
         )

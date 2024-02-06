@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../Core/Constants/Costants.dart';
-import '../../Widgets/BottomContainer.dart';
+import '../BottomContainer.dart';
 import '../../Widgets/HeaderPart.dart';
 import '../../Widgets/TopCounter.dart';
 

@@ -33,21 +33,15 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
           SizedBox(
             height: SizeConfig.DefaultSize! * 3,
           ),
-           const Center(
-              child: Text('Sally',
+          const Center(
+              child: Text('Pharmacy Name',
                   style: TextStyle(
-                      fontSize: 40,
-                      color: Color.fromARGB(255, 255, 255, 255)))),
+                      fontSize: 35, color: Color.fromARGB(255, 98, 140, 210)))),
           Lottie.network(
-              'https://lottie.host/cc72f2c4-6fde-4ad8-8e6c-8d089298a873/FGj6YMCGnB.json'),
+              'https://lottie.host/f72a7172-a1c9-4b04-9f31-e92bb4f4b9ec/j297Y0HUVC.json'),
           SizedBox(
             height: SizeConfig.DefaultSize! * 3,
           ),
-          const Center(
-              child: Text('Pharmacy',
-                  style: TextStyle(
-                      fontSize: 40,
-                      color: Color.fromARGB(255, 255, 255, 255)))),
         ],
       ),
     ]);
