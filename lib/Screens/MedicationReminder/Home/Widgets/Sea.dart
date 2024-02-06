@@ -8,8 +8,9 @@ class BottommContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Flexible(
-      child: Text(
+    return Column(
+      children: [
+        Text(
         'You are in a good health🥰 ',
         style: TextStyle(
           fontSize: 25,
@@ -18,6 +19,46 @@ class BottommContainer extends StatelessWidget {
         ),
         textAlign: TextAlign.center,
       ),
+      Text(
+        'You are in a good health🥰 ',
+        style: TextStyle(
+          fontSize: 25,
+          color: KMainColor,
+          fontWeight: FontWeight.w500,
+        ),
+        textAlign: TextAlign.center,
+      ),
+      Text(
+        'You are in a good health🥰 ',
+        style: TextStyle(
+          fontSize: 25,
+          color: KMainColor,
+          fontWeight: FontWeight.w500,
+        ),
+        textAlign: TextAlign.center,
+      ),
+      Text(
+        'You are in a good health🥰 ',
+        style: TextStyle(
+          fontSize: 25,
+          color: KMainColor,
+          fontWeight: FontWeight.w500,
+        ),
+        textAlign: TextAlign.center,
+      ),
+        const Flexible(
+          child: Text(
+            'You are in a good health🥰 ',
+            style: TextStyle(
+              fontSize: 25,
+              color: KMainColor,
+              fontWeight: FontWeight.w500,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          
+        ),
+      ],
     );
   }
 }
