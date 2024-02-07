@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:get/utils.dart';
 import 'package:pharmacy/Core/Constants/Costants.dart';
+import 'package:pharmacy/Screens/MedicationReminder/Home/HomeMed.dart';
 import 'package:sizer/sizer.dart';
 
 class BottomContainerInHomeScreen extends StatelessWidget {
@@ -25,7 +28,11 @@ class BottomContainerInHomeScreen extends StatelessWidget {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.to(() => const HomeMedScreen(),
+                  transition: Transition.rightToLeft,
+                  duration: const Duration(milliseconds: 500));
+            },
             icon: const Icon(
               FontAwesomeIcons.clock,
               color: KMainColor,

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pharmacy/Core/Constants/Costants.dart';
 
-
-
 class BottomContainer extends StatelessWidget {
   const BottomContainer({super.key});
 
@@ -13,7 +11,7 @@ class BottomContainer extends StatelessWidget {
         'You are in a good health🥰 ',
         style: TextStyle(
           fontSize: 25,
-          color: KMainColor,
+          color: KPrimaryColor,
           fontWeight: FontWeight.w500,
         ),
         textAlign: TextAlign.center,
